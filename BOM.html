@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head><title>BOM</title></head>
+    <body>
+        <h3>Browser Object Model</h3>
+        <h3 id="one"></h3>
+        <h3 id="two"></h3>
+        <button onclick="win_open()">OPEN</button>
+        <button onclick="win_close()">CLOSE</button>
+
+      <script>
+        //sreen.height will return the height of the browser
+        document.getElementById("one").innerHTML="Height of browser"+screen.height
+        //sreen.width will return the width of the browser
+        document.getElementById("two").innerHTML="Width of browser"+screen.width
+        //window.open()- is used to open new tab in the browser
+        var win_open=function()
+        {
+            window.open("https://www.kodnest.com/")
+        }
+        //window.close()- is used to close the current tab in the browser
+       var win_close=function()
+       {
+        window.close()
+       }
+           
+      </script>
+    </body>
+</html>
